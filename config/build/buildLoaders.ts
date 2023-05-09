@@ -11,6 +11,20 @@ export const buildLoaders = ({
     exclude: /node_modules/,
   };
 
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|woff|woff2)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
+  };
+
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  };
+
   const cssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -32,5 +46,5 @@ export const buildLoaders = ({
     ],
   };
 
-  return [typescriptLoader, cssLoader];
+  return [typescriptLoader, cssLoader, svgLoader, fileLoader];
 };
