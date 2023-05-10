@@ -1,5 +1,15 @@
+import { useTranslation } from 'react-i18next';
+
 const MainPage = () => {
-  return <div>MAIN PAGE</div>;
+  const { t } = useTranslation(['main', 'translation']);
+
+  return (
+    <div>
+      {t('translation:mainPage')}
+      <br />
+      {t('main:newTestTranslation')}
+    </div>
+  );
 };
 
 export default MainPage;

@@ -5,7 +5,8 @@ import { BuildOptions } from './types/config';
 
 export const buildPlugins = ({
   paths,
-}: Pick<BuildOptions, 'paths'>): webpack.WebpackPluginInstance[] => [
+  isDev,
+}: Pick<BuildOptions, 'paths' | 'isDev'>): webpack.WebpackPluginInstance[] => [
   new webpack.ProgressPlugin(),
   new HTMLWebpackPlugin({
     template: paths.html,
@@ -13,5 +14,8 @@ export const buildPlugins = ({
   new MiniCssExtractPlugin({
     filename: 'css/[name].[contenthash:8].css',
     chunkFilename: 'css/[name].[contenthash:8].css',
+  }),
+  new webpack.DefinePlugin({
+    __IS_DEV__: JSON.stringify(isDev),
   }),
 ];
