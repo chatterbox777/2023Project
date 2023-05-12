@@ -3,8 +3,6 @@
     height: calc(100vh - var(--navbar-height));
     width: var(--sidevar-width);
     background: var(--inverted-bg-color);
-
-
     transition: width 0.3s ease-out;
 }
 
