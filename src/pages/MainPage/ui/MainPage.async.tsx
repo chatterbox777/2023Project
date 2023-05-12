@@ -4,7 +4,7 @@ export const MainPageAsync = lazy(
   () =>
     new Promise((resolve) => {
       setTimeout(() => {
-        //@ts-ignore
+        // @ts-ignore
         resolve(import('./MainPage'));
       }, 2000);
     })
