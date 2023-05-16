@@ -1,3 +1,6 @@
 {
-  "newTestTranslation": "Новый испытательный человек"
+  "newTestTranslation": "Новый испытательный человек",
+  "pageNotFound": "Страница не найдена",
+  "errorBoundary": "Что то пошло не так, простите!",
+  "reloadPage": "Перезагрузить страницу"
 }

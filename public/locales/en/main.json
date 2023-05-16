@@ -1,3 +1,6 @@
 {
-  "newTestTranslation": "New test Man"
+  "newTestTranslation": "New test Man",
+  "pageNotFound": "Page not found",
+  "errorBoundary": "Somethig went wrong, sorry!",
+  "reloadPage": "Reload  the page"
 }
