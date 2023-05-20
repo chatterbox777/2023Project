@@ -3,7 +3,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
-import plugin from 'babel-plugin-i18next-extract';
 
 export const buildPlugins = ({
   paths,
