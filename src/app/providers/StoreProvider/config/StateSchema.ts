@@ -1,3 +1,5 @@
-export interface CounterState {}
+import { CounterSchema } from "entities/Counter";
 
-export interface StateSchema {}
+export interface StateSchema {
+  counter: CounterSchema;
+}

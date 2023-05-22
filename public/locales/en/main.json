@@ -3,5 +3,10 @@
   "pageNotFound": "Page not found",
   "errorBoundary": "Somethig went wrong, sorry!",
   "reloadPage": "Reload  the page",
-  "Enter": "Login"
+  "Enter": "Login",
+  "counter": {
+    "increment": "Increment"
+  },
+  "decrement": "Decrement",
+  "increment": "Increment"
 }

@@ -3,5 +3,7 @@
   "pageNotFound": "Страница не найдена",
   "errorBoundary": "Что то пошло не так, простите!",
   "reloadPage": "Перезагрузить страницу",
-  "Enter": "Войти"
+  "Enter": "Войти",
+  "decrement": "Отнять",
+  "increment": "Прибавить"
 }
