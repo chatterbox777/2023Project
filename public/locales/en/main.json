@@ -8,5 +8,8 @@
     "increment": "Increment"
   },
   "decrement": "Decrement",
-  "increment": "Increment"
+  "increment": "Increment",
+  "main": {
+    "Enter": "Enter"
+  }
 }

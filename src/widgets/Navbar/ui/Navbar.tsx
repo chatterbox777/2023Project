@@ -1,10 +1,10 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from "shared/lib/classNames/classNames";
 
-import { useTranslation } from 'react-i18next';
-import { Modal } from 'shared/ui/Modal/Modal';
-import { useState } from 'react';
-import { Button, ButtonTheme } from 'shared/ui/Button';
-import classes from './Navbar.module.scss';
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { Button, ButtonTheme } from "shared/ui/Button";
+import { LoginModal } from "features/AuthByUsername";
+import classes from "./Navbar.module.scss";
 
 interface NavbarProps {
   className?: string;
@@ -13,8 +13,8 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
   const { t } = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
-  const handleToggleModal = () => {
-    setIsAuthModal((prevOpenState) => !prevOpenState);
+  const handleShowModal = () => {
+    setIsAuthModal(true);
   };
   const handleCloseModal = () => {
     setIsAuthModal(false);
@@ -25,17 +25,12 @@ export const Navbar = ({ className }: NavbarProps) => {
       <Button
         className={classes.links}
         theme={ButtonTheme.CLEAR_INVERTED}
-        onClick={handleToggleModal}
+        onClick={handleShowModal}
       >
-        {t('main:Enter')}
+        {t("main:Enter")}
       </Button>
       {/* eslint-disable-next-line */}
-      <Modal isOpen={isAuthModal} onClose={handleCloseModal}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore
-        fugit quae magnam voluptatum fuga totam debitis earum maxime, modi
-        reprehenderit itaque. Quia ut vero, repudiandae pariatur placeat nemo
-        labore?
-      </Modal>
+      <LoginModal isOpen={isAuthModal} onClose={handleCloseModal} />
     </div>
   );
 };

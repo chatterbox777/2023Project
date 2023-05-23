@@ -1,5 +1,7 @@
 {
   "Test": "test example",
   "toggleLan": "toggle language",
-  "mainPage": "Main Page"
+  "mainPage": "Main Page",
+  "enterLogin": "Enter Login",
+  "enterPass": "Enter password"
 }

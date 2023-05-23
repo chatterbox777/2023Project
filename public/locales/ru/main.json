@@ -5,5 +5,8 @@
   "reloadPage": "Перезагрузить страницу",
   "Enter": "Войти",
   "decrement": "Отнять",
-  "increment": "Прибавить"
+  "increment": "Прибавить",
+  "main": {
+    "Enter": "Войти"
+  }
 }
